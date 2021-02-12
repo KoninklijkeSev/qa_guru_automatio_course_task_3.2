@@ -23,7 +23,7 @@ public class TestsCheckInfoOnPageSoftAssertions {
         $("[name = q]").setValue("Selenide").pressEnter();
         $(".repo-list a").click();
         $(byText("Wiki")).click();
-        $("[data-filterable-for]").shouldHave(text("SoftAssertions")).click();
+        $("[data-filterable-for]").shouldHave(text("SoftAssertions"));
         $(byText("SoftAssertions")).click();
         $("[start = '3']").shouldHave(text("Using JUnit5 extend test class:"));
     }
